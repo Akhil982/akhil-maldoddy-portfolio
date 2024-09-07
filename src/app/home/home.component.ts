@@ -14,14 +14,46 @@ export class HomeComponent implements OnInit {
     this._translationLoaderService.loadTranslations(english, french);
   }
   ngOnInit(): void {
-    var options = {
-      strings: ['FULL-STACK DEVELOPER','Angular', 'Spring Boot'],
-      typeSpeed: 50,
-      backSpeed: 50,
+    var serverSideOptions = {
+      strings: ['Spring Boot', 'Microservices', 'Security', 'Rest API'],
+      typeSpeed: 100,
+      backSpeed: 100,
       loop: true,
     };
-    
-    var typed = new Typed('.typed', options);
-    typed.reset(true)
+    var clientSideOptions = {
+      strings: ['Angular', 'JavaScript', 'HTML', 'CSS'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true,
+    };
+    var devOpsOptions = {
+      strings: ['Manual Linux', 'Jenkins', 'Docker', 'Kubernetes', 'AWS'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true,
+    };
+    var aiMlOptions = {
+      strings: ['Numpy', 'MatPlotLib', 'Pandas', 'Neural Networks'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true,
+    };
+    var quantumComputingOptions = {
+      strings: ['Qiskit'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true,
+    };
+
+    var serverSide = new Typed('.serverSide', serverSideOptions);
+    serverSide.reset(true)
+    var clientSide = new Typed('.clientSide', clientSideOptions);
+    clientSide.reset(true)
+    var devOps = new Typed('.devOps', devOpsOptions);
+    devOps.reset(true)
+    var aiMl = new Typed('.aiMl', aiMlOptions);
+    aiMl.reset(true)
+    var quantumComputing = new Typed('.quantumComputing', quantumComputingOptions);
+    quantumComputing.reset(true)
   }
 }

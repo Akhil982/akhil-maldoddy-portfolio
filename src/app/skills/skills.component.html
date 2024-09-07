@@ -4,43 +4,71 @@
         <span class="bar-title mb-5"></span>
         <div class="row mt-2">
             <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-                <h5 class="h5"><strong>{{'skills.technologies' | translate}}</strong></h5>
+                <h5 class="h5"><strong>{{'skills.backend' | translate}}</strong></h5>
                 <div id="skillgraph">
-                    <div class='row skill-row' *ngFor="let technologie of skills.technologies;">
+                    <div class='row skill-row' *ngFor="let eachBackend of skills.backend;">
                         <div class="label d-flex flex-row">
-                            <span class="skillLabel">{{technologie.name}}</span>
-                            <span class="skill-percent">{{technologie.percent}}%</span>
+                            <span class="skillLabel">{{eachBackend.name}}</span>
+                            <span class="skill-percent">{{eachBackend.percent}}%</span>
                         </div>
                         <span class='skillData-Wrapper'>
-                            <span [ngClass]="technologie.remark" class='skillData bg-rust'></span>
+                            <span [ngClass]="eachBackend.remark" class='skillData bg-rust'></span>
                         </span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-                <h5 class="h5"><strong>{{'skills.tools' | translate}}</strong></h5>
+                <h5 class="h5"><strong>{{'skills.frontend' | translate}}</strong></h5>
                 <div id="skillgraph" class="panel panel-default">
-                    <div class='row skill-row' *ngFor="let tool of skills.tools;">
+                    <div class='row skill-row' *ngFor="let eachFrontEnd of skills.frontend;">
                         <div class="label d-flex flex-row">
-                            <span class='skillLabel'>{{tool.name}}</span>
-                            <span class="skill-percent">{{tool.percent}}%</span>
+                            <span class='skillLabel'>{{eachFrontEnd.name}}</span>
+                            <span class="skill-percent">{{eachFrontEnd.percent}}%</span>
                         </div>
                         <span class='skillData-Wrapper'>
-                            <span [ngClass]="tool.remark" class='skillData bg-rust'></span>
+                            <span [ngClass]="eachFrontEnd.remark" class='skillData bg-rust'></span>
                         </span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-                <h5 class="h5"><strong>{{'skills.methodologies' | translate}}</strong></h5>
+                <h5 class="h5"><strong>{{'skills.devOps' | translate}}</strong></h5>
                 <div id="skillgraph" class="panel panel-default">
-                    <div class='row skill-row' *ngFor="let methodologie of skills.methodologies;">
+                    <div class='row skill-row' *ngFor="let eachDevOps of skills.devOps;">
                         <div class="label d-flex flex-row">
-                            <span class='skillLabel'>{{methodologie.name}}</span>
-                            <span class="skill-percent">{{methodologie.percent}}%</span>
+                            <span class='skillLabel'>{{eachDevOps.name}}</span>
+                            <span class="skill-percent">{{eachDevOps.percent}}%</span>
                         </div>
                         <span class='skillData-Wrapper'>
-                            <span [ngClass]="methodologie.remark" class='skillData bg-rust'></span>
+                            <span [ngClass]="eachDevOps.remark" class='skillData bg-rust'></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="margin-top: 3%;" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>{{'skills.aiMl' | translate}}</strong></h5>
+                <div id="skillgraph" class="panel panel-default">
+                    <div class='row skill-row' *ngFor="let eachAiMl of skills.aiMl;">
+                        <div class="label d-flex flex-row">
+                            <span class='skillLabel'>{{eachAiMl.name}}</span>
+                            <span class="skill-percent">{{eachAiMl.percent}}%</span>
+                        </div>
+                        <span class='skillData-Wrapper'>
+                            <span [ngClass]="eachAiMl.remark" class='skillData bg-rust'></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="margin-top: 3%;" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
+                <h5 class="h5"><strong>{{'skills.quantumComputing' | translate}}</strong></h5>
+                <div id="skillgraph" class="panel panel-default">
+                    <div class='row skill-row' *ngFor="let eachQuantumComputing of skills.quantumComputing;">
+                        <div class="label d-flex flex-row">
+                            <span class='skillLabel'>{{eachQuantumComputing.name}}</span>
+                            <span class="skill-percent">{{eachQuantumComputing.percent}}%</span>
+                        </div>
+                        <span class='skillData-Wrapper'>
+                            <span [ngClass]="eachQuantumComputing.remark" class='skillData bg-rust'></span>
                         </span>
                     </div>
                 </div>
